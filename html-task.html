@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task: Lists, Tables & Forms</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #0f0f0f;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid #090909;
+        }
+
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            border-bottom: 2px solid #131313;
+            padding-bottom: 10px;
+        }
+
+        h1 span {
+            color: #d35400; 
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 1px solid #1e1e1e;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #1a1a1a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+       
+        .form-container {
+            border: 1px solid #131313;
+            padding: 25px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .form-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .form-group label {
+            width: 80px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #2c2b2b;
+        }
+
+        .btn-submit {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-style: italic;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML TASK: <span>Lists, Tables & Forms</span></h1>
+
+    <section>
+        <h2>1. Create a List</h2>
+        <p>Create an ordered list of <strong>'Steps to Make a Sandwich'</strong>:</p>
+        <ol>
+            <li>Gather Ingredients</li>
+            <li>Spread the Condiments</li>
+            <li>Add the Fillings</li>
+            <li>Put the Sandwich Together</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. Build a Table</h2>
+        <p>Create a table showing <strong>"Student Grades"</strong>:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Math</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Science</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Mike</td>
+                    <td>History</td>
+                    <td>C</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Create a Form</h2>
+        <p>Design a 'Contact Us' form with the following fields:</p>
+        
+        <div class="form-container">
+            <div class="form-title">Contact Us</div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <p class="footer-text">Complete all tasks using proper HTML!</p>
+
+</body>
+</html>
